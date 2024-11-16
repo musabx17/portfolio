@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Registration</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="registration.css"
+</head>
+<body background="rw.jpg">
+    <center>
+        <h1><font size="7">Registration</font></h1>
+    </center>
+    <form>
+        <fieldset>
+            <legend>
+                <font size="5">Register Form</font>
+            </legend>
+            <div class="input-container">
+                    <i class="fa fa-user icon"></i>
+                    <input type="text" name="First Name" id="First Name" placeholder="Enter First Name" required/>
+                    <input type="text" name="Last Name" id="Last Name" placeholder="Enter Last Name" required/>
+            </div>
+            <div  class="input-container">
+                <i class="fa fa-envelope icon"></i> 
+                <input type="email" name="Email" id="Email" placeholder="myname@example.com" required/>
+            </div>
+            <div  class="input-container">
+                <i class="fa fa-key icon"></i>
+            <input type="password" name="Password" id="Password" minlength="8" placeholder="Enter Password" pattern="/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/"  title="Password must has 8 charachters, one uppercase letter, one lowercase letter,at least one digit and at least one special charachter" required/>
+            </div>
+         <p><b>Note:</b>Password must contain at least 8 charachters, one uppercase letter, one lowercase letter,at least one digit and at least one special charachter</p>
+         <div  class="input-container">
+            <i class="fa fa-phone icon"></i>
+             <input type="number" name="Phone No" id="Phone no" maxlength="11" minlength="11" placeholder="Enter your phone no" pattern="(., '^[0-9]{11}$')" title="must contain 11 digit" required/>
+         </div>
+         <p><b>Note:</b>phone number must contains 11 digit only.</p><br/>
+         Gender<input id="female" type="radio" name="Gender" value="f" required/>
+         <label for="female">Female</label>
+         <input id="male" type="radio" name="Gender" value="m">
+         <label for="male">Male</label><br><br/>
+         <label>
+            <font size="5">CNIC:</font><input type="number" name="CNIC" id="CNIC" placeholder="Enter Your CNIC number" required/>
+        </label>
+         <label>
+            <font size="5">Date of Birth:</font><input type="date" id="Date of Birth" name="dob"placeholder="mm/dd/yyyy" required/>
+        </label><br/><br/>
+         <p><font size="5">Select Course</font> </p>
+         <select name="course" required>
+            <option value="Graphics Designing">Graphic Designing</option>
+            <option value="web & Development">Web & Development</option>
+            <option value="Ui&ux">UI/UX design</option>
+            <option value="digital marketing">Digital marketing</option>
+         </select><br/><br/>
+         <form action="/action_page.php">
+         <p>Upload your image (optional)</p>
+         <input type="file" id="myfile"/><br/><br/>
+        </form>
+        <button type="submit" class="btn">Register</button>
+        </fieldset>
+        <div class="a">
+            <h2><font size="5"><b>If I can be of any help, please do not hesitate to contact me. </b></font></h2>
+        <a href="mailto:musabahmed1299@gmail.com"><font size="5">contact me</font></a>
+    </div>
+    </form>
+</body>
+</html>
